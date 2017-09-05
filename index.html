@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CodeIT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+<main class="container">
+    <div class="row">
+        <div class="boxWrapper">
+            <div class="titleBox clrLn"><h2>Total Companies</h2></div>
+            <div class="boxContent" id="totalCompanies">
+                <div class="loader">
+                    <div class="loaderInner"></div>
+                </div>
+            </div>
+        </div>
+        <div class="boxWrapper">
+            <div class="titleBox clrLn"><h2>List of Companies</h2></div>
+            <div class="boxContent" id="listCompanies">
+                <div class="loader">
+                    <div class="loaderInner"></div>
+                </div>
+                <ul></ul>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="blockWrap">
+            <div class="titleBox clrLn">
+                <h2>Company partners</h2>
+                <section class="controls">
+                    <h2>Sort by:</h2>
+                    <div id="sort">
+                        <h3>Name</h3>
+                        <i class="fa fa-caret-up" aria-hidden="true"></i><i class="fa fa-caret-down"
+                                                                            aria-hidden="true"></i>
+                    </div>
+                    <div id="percent">
+                        <h3>Percent</h3>
+                        <i class="fa fa-caret-up" aria-hidden="true"></i><i class="fa fa-caret-down"
+                                                                            aria-hidden="true"></i>
+                    </div>
+                </section>
+            </div>
+            <div class="blockContent">
+                <div class="loader">
+                    <div class="loaderInner"></div>
+                </div>
+                <ul id="partnersList"></ul>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="boxWrapper">
+            <div class="titleBox"><h2>Companies by Location</h2></div>
+            <div class="loader">
+                <div class="loaderInner"></div>
+            </div>
+            <div id="container" style="min-width: 310px; height: 240px; max-width: 600px; margin: 0 auto"></div>
+            <div id="modalForm">
+                <span id="modalClose"><i class="fa fa-times" aria-hidden="true"></i></span>
+                <ul id="listLocations"></ul>
+            </div>
+            <div id="overlay"></div>
+        </div>
+        <div class="boxWrapper">
+            <div class="titleBox"><h2>News</h2></div>
+            <div class="loader">
+                <div class="loaderInner"></div>
+            </div>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img class="clrLn" src="#" alt="image-description">
+                        <div class="newsContent clrLn">
+                            <a href="#"><h3>Title</h3></a>
+                            <p></p>
+                        </div>
+                        <div class="boxPublic">
+                            <section>Author: <span class="author">Denis</span></section>
+                            <section>Public: <time class="publicDate">30.01.14</time></section>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="clrLn" src="#" alt="image-description">
+                        <div class="newsContent clrLn">
+                            <a href="#"><h3>Title</h3></a>
+                            <p></p>
+                        </div>
+                        <div class="boxPublic">
+                            <section>Author: <span class="author">Denis</span></section>
+                            <section>Public: <time class="publicDate">30.01.14</time></section>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="clrLn" src="#" alt="image-description">
+                        <div class="newsContent clrLn">
+                            <a href="#"><h3>Title</h3></a>
+                            <p></p>
+                        </div>
+                        <div class="boxPublic">
+                            <section>Author: <span class="author">Denis</span></section>
+                            <section>Public: <time class="publicDate">30.01.14</time></section>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="clrLn" src="#" alt="image-description">
+                        <div class="newsContent clrLn">
+                            <a href="#"><h3>Title</h3></a>
+                            <p></p>
+                        </div>
+                        <div class="boxPublic">
+                            <section>Author: <span class="author">Denis</span></section>
+                            <section>Public: <time class="publicDate">30.01.14</time></section>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="clrLn" src="#" alt="image-description">
+                        <div class="newsContent clrLn">
+                            <a href="#"><h3>Title</h3></a>
+                            <p></p>
+                        </div>
+                        <div class="boxPublic">
+                            <section>Author: <span class="author">Denis</span></section>
+                            <section>Public: <time class="publicDate">30.01.14</time></section>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="clrLn" src="#" alt="image-description">
+                        <div class="newsContent clrLn">
+                            <a href="#"><h3>Title</h3></a>
+                            <p></p>
+                        </div>
+                        <div class="boxPublic">
+                            <section>Author: <span class="author">Denis</span></section>
+                            <section>Public: <time class="publicDate">30.01.14</time></section>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="formWrapper">
+            <div class="titleBox clrLn"><h2>Sing Up</h2></div>
+            <form action="" method="post" class="formContainer">
+                <div class="inputWrapper">
+                    <label class="labelName" for="name"><i class="fa fa-user" aria-hidden="true"></i></label>
+                    <input id="name" type="text" name="name" placeholder="Name" required pattern="[A-Za-zА-Яа-яЁё]+" >
+                </div>
+                <div class="inputWrapper">
+                    <label class="labelSecond" for="secondname"><i class="fa fa-user" aria-hidden="true"></i></label>
+                    <input id="secondname" type="text" name="secondname" placeholder="Second name" required pattern="\D[A-Za-zА-Яа-яЁё]+">
+                </div>
+                <div class="inputWrapper">
+                    <label class="labelEmail" for="email"><i class="fa fa-envelope-o" aria-hidden="true"></i></label>
+                    <input id="email" type="email" name="email" placeholder="Email" required>
+                </div>
+                <select name="gender" size="1" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+                <div class="inputWrapper">
+                    <label class="labelPass" for="password"><i class="fa fa-asterisk" aria-hidden="true"></i></label>
+                    <input id="password" type="text" name="password" placeholder="Password" pattern="" required>
+                </div>
+                <input id="regulations" type="checkbox" required>
+                <label for="regulations">With the rules of acquaintance</label>
+                <div class="clrLn"><input class="submit clrLn" type="submit" value="Send"></div>
+            </form>
+        </div>
+    </div>
+</main>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.jquery.min.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="js/common.min.js"></script>
+</body>
+</html>
