@@ -151,10 +151,10 @@
     <div class="row">
         <div class="formWrapper">
             <div class="titleBox clrLn"><h2>Sing Up</h2></div>
-            <form action="" method="post" class="formContainer">
+            <form id="form" action="javascript:void(null);" method="post" onsubmit="call()" class="formContainer" name="form">
                 <div class="inputWrapper">
                     <label class="labelName" for="name"><i class="fa fa-user" aria-hidden="true"></i></label>
-                    <input id="name" type="text" name="name" placeholder="Name" required pattern="[A-Za-zА-Яа-яЁё]+" >
+                    <input id="name" type="text" name="name" placeholder="Name" required>
                 </div>
                 <div class="inputWrapper">
                     <label class="labelSecond" for="secondname"><i class="fa fa-user" aria-hidden="true"></i></label>
@@ -170,7 +170,7 @@
                 </select>
                 <div class="inputWrapper">
                     <label class="labelPass" for="password"><i class="fa fa-asterisk" aria-hidden="true"></i></label>
-                    <input id="password" type="text" name="password" placeholder="Password" pattern="" required>
+                    <input id="pass" type="password" name="pass" placeholder="Password" required>
                 </div>
                 <input id="regulations" type="checkbox" required>
                 <label for="regulations">With the rules of acquaintance</label>
